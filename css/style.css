@@ -8,3 +8,43 @@
 html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif; }
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 10%;
+  background-color: #242526; }
+  .header_logo {
+    text-decoration: none;
+    margin-right: auto; }
+    .header_logo h1 {
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase; }
+  .header_links {
+    list-style: none;
+    display: flex; }
+    .header_links li {
+      padding: 0 2.5rem; }
+    .header_links a {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease 0s; }
+      .header_links a:hover {
+        color: #2596be; }
+  .header_resume {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 4rem;
+    padding: 1rem 2.5rem;
+    background-color: #2596be;
+    border-radius: 5rem;
+    transition: all 0.5s ease; }
+    .header_resume:hover {
+      color: #242526;
+      background-color: #fff; }
