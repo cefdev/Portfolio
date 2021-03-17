@@ -9,19 +9,28 @@ html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif; }
 
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: flex !important; }
+  .header_resume,
+  nav {
+    display: none !important; }
+  .header_logo {
+    margin: 0 auto !important; } }
+
 .hamburger {
   position: absolute;
   top: 0;
   right: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 4rem;
   height: 4rem;
-  margin: 1.5rem;
+  margin: 1rem 1.5rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  z-index: 100; }
+  z-index: 100;
+  display: none; }
   .hamburger_btn {
     width: 4rem;
     height: 0.5rem;
@@ -97,7 +106,8 @@ html {
   left: 0;
   top: 0;
   background-color: #242526;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  transform: translateX(100%); }
   .mobile_links {
     display: flex;
     height: 100%;

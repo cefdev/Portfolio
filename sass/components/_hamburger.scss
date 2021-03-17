@@ -2,15 +2,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 4rem;
   height: 4rem;
-  margin: 1.5rem;
+  margin: 1rem 1.5rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   z-index: 100;
+  display: none;
 
   &_btn {
     width: 4rem;
@@ -39,6 +39,7 @@
     }
   }
 
+  // ANIMATION
   &.open &_btn {
     transform: translateX(-2rem);
     background: transparent;

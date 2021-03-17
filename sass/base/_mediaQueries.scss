@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: flex !important;
+  }
+
+  .header_resume,
+  nav {
+    display: none !important;
+  }
+
+  .header_logo {
+    margin: 0 auto !important;
+  }
+}
