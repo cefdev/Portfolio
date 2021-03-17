@@ -1,0 +1,41 @@
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+
+  &_btn {
+    width: 4rem;
+    height: 0.5rem;
+    background: $color-white;
+    border-radius: 0.3rem;
+    transition: all 0.5s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 4rem;
+      height: 0.5rem;
+      background: $color-white;
+      border-radius: 0.3rem;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &::before {
+      transform: translateY(-1.6rem);
+    }
+
+    &::after {
+      transform: translateY(1.6rem);
+    }
+  }
+}

@@ -9,7 +9,40 @@ html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif; }
 
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  z-index: 100; }
+  .hamburger_btn {
+    width: 4rem;
+    height: 0.5rem;
+    background: #ffffff;
+    border-radius: 0.3rem;
+    transition: all 0.5s ease-in-out; }
+    .hamburger_btn::before, .hamburger_btn::after {
+      content: "";
+      position: absolute;
+      width: 4rem;
+      height: 0.5rem;
+      background: #ffffff;
+      border-radius: 0.3rem;
+      transition: all 0.5s ease-in-out; }
+    .hamburger_btn::before {
+      transform: translateY(-1.6rem); }
+    .hamburger_btn::after {
+      transform: translateY(1.6rem); }
+
 .header {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
