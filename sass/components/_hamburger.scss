@@ -38,4 +38,17 @@
       transform: translateY(1.6rem);
     }
   }
+
+  &.open &_btn {
+    transform: translateX(-2rem);
+    background: transparent;
+  }
+
+  &.open &_btn::before {
+    transform: rotate(45deg) translate(1.5rem, -1.5rem);
+  }
+
+  &.open &_btn::after {
+    transform: rotate(-45deg) translate(1.5rem, 1.5rem);
+  }
 }

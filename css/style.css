@@ -40,6 +40,13 @@ html {
       transform: translateY(-1.6rem); }
     .hamburger_btn::after {
       transform: translateY(1.6rem); }
+  .hamburger.open .hamburger_btn {
+    transform: translateX(-2rem);
+    background: transparent; }
+  .hamburger.open .hamburger_btn::before {
+    transform: rotate(45deg) translate(1.5rem, -1.5rem); }
+  .hamburger.open .hamburger_btn::after {
+    transform: rotate(-45deg) translate(1.5rem, 1.5rem); }
 
 .header {
   position: relative;
