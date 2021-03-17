@@ -48,3 +48,29 @@ html {
     .header_resume:hover {
       color: #000000;
       background-color: #ffffff; }
+
+.mobile {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #242526;
+  transition: all 0.5s ease; }
+  .mobile_links {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .mobile_links a {
+      padding: 2.5rem 0;
+      font-size: 3rem;
+      font-weight: 500;
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      transition: all 0.3s ease; }
+      .mobile_links a:hover, .mobile_links a:focus {
+        color: #2596be; }

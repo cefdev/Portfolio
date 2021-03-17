@@ -1,56 +1,90 @@
 .header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 10%;
+  background-color: $color-secondary;
+
+  &_logo {
+    text-decoration: none;
+    margin-right: auto;
+
+    & h1 {
+      font-weight: 800;
+      color: $color-white;
+      text-transform: uppercase;
+    }
+  }
+
+  &_links {
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
+
+    & li {
+      padding: 0 2.5rem;
+    }
+
+    & a {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $color-white;
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        color: $color-tertiary;
+      }
+    }
+  }
+
+  &_resume {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $color-white;
+    text-decoration: none;
+    margin-left: 4rem;
+    padding: 1rem 2.5rem;
+    background-color: $color-tertiary;
+    border-radius: 5rem;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $color-primary;
+      background-color: $color-white;
+    }
+  }
+}
+
+.mobile {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: $color-secondary;
+  transition: all 0.5s ease;
+
+  &_links {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
     align-items: center;
-    padding: 1.5rem 10%;
-    background-color: $color-secondary;
+    justify-content: center;
 
-    &_logo {
-        text-decoration: none;
-        margin-right: auto;
+    & a {
+      padding: 2.5rem 0;
+      font-size: 3rem;
+      font-weight: 500;
+      color: $color-white;
+      text-decoration: none;
+      display: block;
+      transition: all 0.3s ease;
 
-        & h1 {
-            font-weight: 800;
-            color: $color-white;
-            text-transform: uppercase;
-        }
+      &:hover,
+      &:focus {
+        color: $color-tertiary;
+      }
     }
-
-    &_links {
-        list-style: none;
-        display: flex;
-
-        & li {
-            padding: 0 2.5rem;
-        }
-
-        & a {
-            font-size: 1.4rem;
-            font-weight: 500;
-            color: $color-white;
-            text-decoration: none;
-            transition: all 0.3s ease 0s;
-
-            &:hover {
-                color: $color-tertiary;
-            }
-        }
-    }
-    
-    &_resume {
-        font-size: 1.4rem;
-        font-weight: 500;
-        color: $color-white;
-        text-decoration: none;
-        margin-left: 4rem;
-        padding: 1rem 2.5rem;
-        background-color: $color-tertiary;
-        border-radius: 5rem;
-        transition: all 0.5s ease;
-        
-        &:hover {       
-            color: $color-primary;
-            background-color: $color-white;
-        }
-    }
+  }
 }
