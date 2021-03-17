@@ -20,7 +20,7 @@ html {
     margin-right: auto; }
     .header_logo h1 {
       font-weight: 800;
-      color: #fff;
+      color: #ffffff;
       text-transform: uppercase; }
   .header_links {
     list-style: none;
@@ -30,7 +30,7 @@ html {
     .header_links a {
       font-size: 1.4rem;
       font-weight: 500;
-      color: #fff;
+      color: #ffffff;
       text-decoration: none;
       transition: all 0.3s ease 0s; }
       .header_links a:hover {
@@ -38,7 +38,7 @@ html {
   .header_resume {
     font-size: 1.4rem;
     font-weight: 500;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin-left: 4rem;
     padding: 1rem 2.5rem;
@@ -46,5 +46,5 @@ html {
     border-radius: 5rem;
     transition: all 0.5s ease; }
     .header_resume:hover {
-      color: #242526;
-      background-color: #fff; }
+      color: #000000;
+      background-color: #ffffff; }
