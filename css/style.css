@@ -233,7 +233,7 @@ html {
       font-weight: 600; }
 
 .tapbar {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: none;
