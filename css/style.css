@@ -87,7 +87,7 @@ html {
       text-decoration: none;
       transition: all 0.3s ease 0s; }
       .header_links a:hover {
-        color: #0854bc; }
+        color: #0095ff; }
   .header_resume {
     font-size: 1.4rem;
     font-weight: 500;
@@ -95,7 +95,7 @@ html {
     text-decoration: none;
     margin-left: 4rem;
     padding: 1rem 2.5rem;
-    background-color: #0854bc;
+    background-color: #0095ff;
     border-radius: 5rem;
     transition: all 0.5s ease; }
     .header_resume:hover {
@@ -127,7 +127,7 @@ html {
       display: block;
       transition: all 0.3s ease; }
       .mobile_links a:hover, .mobile_links a:focus {
-        color: #0854bc; }
+        color: #0095ff; }
 
 .tapbar {
   position: absolute;
@@ -137,7 +137,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem 2rem;
-  background-color: #0854bc; }
+  background-color: #0095ff; }
   .tapbar a {
     color: #ffffff;
     font-size: 1.4rem;
