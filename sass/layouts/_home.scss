@@ -1,0 +1,57 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url(../img/top.jpg);
+  background-size: cover;
+
+  &_container {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  &_paragraph {
+    font-size: 2.5rem;
+    font-weight: 500;
+    width: 85%;
+    margin: 2rem 0 2rem 0;
+    line-height: 3rem;
+  }
+
+  &_name {
+    font-size: 5.5rem;
+    font-weight: 700;
+  }
+
+  &_description {
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: $color-secondary;
+
+    span {
+      color: $color-tertiary;
+    }
+  }
+
+  &_btn {
+    width: 15rem;
+    padding: 1.25rem 1.5rem;
+    margin-top: 5rem;
+    text-align: center;
+    border: 2px solid $color-tertiary;
+    cursor: pointer;
+    border-radius: 5rem;
+
+    &:hover {
+      background: rgba($color-secondary, 0.3);
+    }
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+}
