@@ -9,6 +9,23 @@ html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif; }
 
+/* Small screens & laptops */
+@media only screen and (max-width: 1025px) {
+  .home_container {
+    width: 70% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important; }
+  .home_paragraph {
+    font-size: 2rem !important;
+    margin: 1rem 0 !important; }
+    .home_paragraph:nth-of-type(2) {
+      margin: 2rem 0 0 0 !important; }
+  .home_name {
+    font-size: 4rem !important; }
+  .home_description {
+    font-size: 4rem !important; } }
+
+/* Tablets & Landscape */
 @media only screen and (max-width: 768px) {
   .hamburger {
     display: flex !important; }
@@ -16,11 +33,47 @@ html {
   nav {
     display: none !important; }
   .header_logo {
-    margin: 0 auto !important; } }
-
-@media only screen and (min-width: 768px) {
+    margin: 0 auto !important; }
   .tapbar {
-    display: none !important; } }
+    display: flex !important; }
+  .home_container {
+    width: 80% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important; }
+  .home_paragraph {
+    font-size: 1.8rem !important;
+    width: 100% !important;
+    margin: 1rem 0 !important; }
+    .home_paragraph:nth-of-type(2) {
+      margin: 2rem 0 0 0 !important; }
+  .home_name {
+    font-size: 3.2rem !important;
+    margin-bottom: 0rem !important; }
+  .home_description {
+    font-size: 3.2rem !important; }
+  .home_btn {
+    width: 13rem !important;
+    padding: 1rem 0.5rem !important; } }
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+  .home_container {
+    left: 4% !important;
+    transform: translate(0%, -50%) !important; }
+  .home_paragraph {
+    font-size: 1.6rem !important;
+    width: 100% !important;
+    margin: 1rem 0 !important; }
+    .home_paragraph:nth-of-type(2) {
+      margin: 2rem 0 0 0 !important; }
+  .home_name {
+    font-size: 2.8rem !important;
+    margin-bottom: 0rem !important; }
+  .home_description {
+    font-size: 2.8rem !important; }
+  .home_btn {
+    width: 13rem !important;
+    padding: 1rem 0.5rem !important; } }
 
 .hamburger {
   position: absolute;
@@ -33,7 +86,7 @@ html {
   margin: 1rem 1.5rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  z-index: 100;
+  z-index: 300;
   display: none; }
   .hamburger_btn {
     width: 4rem;
@@ -106,7 +159,7 @@ html {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 200;
   left: 0;
   top: 0;
   background-color: #242526;
@@ -133,11 +186,12 @@ html {
   position: absolute;
   bottom: 0;
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem 2rem;
-  background-color: #0095ff; }
+  background-color: #0095ff;
+  z-index: 100; }
   .tapbar a {
     color: #ffffff;
     font-size: 1.4rem;
