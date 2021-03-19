@@ -28,6 +28,47 @@
       font-size: 4rem !important;
     }
   }
+
+  // ABOUT SECTION
+  .about {
+    height: auto !important;
+
+    &_container {
+      width: 85rem !important;
+      margin: 10rem auto !important;
+    }
+
+    &_left {
+      width: auto !important;
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%) !important;
+      padding: 3.5rem !important;
+
+      &-heading {
+        font-size: 2rem !important;
+        margin-bottom: 2rem !important;
+
+        &::after {
+          top: -1.5rem !important;
+          left: 11rem !important;
+          width: 85% !important;
+        }
+      }
+
+      &_paragraph {
+        width: auto !important;
+        margin-bottom: 0.5rem !important;
+
+        &.quote {
+          margin: 1rem 0 !important;
+        }
+      }
+    }
+
+    &_right {
+      margin: auto 4rem auto 0 !important;
+      width: 20rem !important;
+    }
+  }
 }
 /**/
 /* Tablets & Landscape */
@@ -82,6 +123,46 @@
       padding: 1rem 0.5rem !important;
     }
   }
+
+  // ABOUT SECTION
+  .about {
+    &_container {
+      width: 90% !important;
+      margin: 3rem auto !important;
+      flex-direction: column !important;
+    }
+
+    &_left {
+      background: none !important;
+      clip-path: none !important;
+      padding: 2rem !important;
+
+      &-heading::after {
+        width: 65% !important;
+      }
+
+      &-paragraph {
+        width: 100% !important;
+
+        &.quote {
+          margin-bottom: 3rem !important;
+        }
+      }
+
+      &-skills {
+        margin-top: 2rem !important;
+
+        & > * {
+          font-size: 1.2rem !important;
+          padding: 0.2rem !important;
+        }
+      }
+    }
+
+    &_right {
+      margin: 3rem auto !important;
+    }
+  }
 }
 
 /**/
@@ -116,6 +197,26 @@
     &_btn {
       width: 13rem !important;
       padding: 1rem 0.5rem !important;
+    }
+  }
+
+  // ABOUT SECTION
+  .about {
+    &_container {
+      width: 100% !important;
+      margin: 0 !important;
+      border-radius: 0 !important;
+    }
+
+    &_left {
+      &-paragraph {
+        font-size: 1.3rem !important;
+      }
+
+      &-skills {
+        display: block !important;
+        grid-template-columns: none !important;
+      }
     }
   }
 }

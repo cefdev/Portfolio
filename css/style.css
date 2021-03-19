@@ -26,7 +26,31 @@ html {
   .home_name {
     font-size: 4rem !important; }
   .home_description {
-    font-size: 4rem !important; } }
+    font-size: 4rem !important; }
+  .about {
+    height: auto !important; }
+    .about_container {
+      width: 85rem !important;
+      margin: 10rem auto !important; }
+    .about_left {
+      width: auto !important;
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%) !important;
+      padding: 3.5rem !important; }
+      .about_left-heading {
+        font-size: 2rem !important;
+        margin-bottom: 2rem !important; }
+        .about_left-heading::after {
+          top: -1.5rem !important;
+          left: 11rem !important;
+          width: 85% !important; }
+      .about_left_paragraph {
+        width: auto !important;
+        margin-bottom: 0.5rem !important; }
+        .about_left_paragraph.quote {
+          margin: 1rem 0 !important; }
+    .about_right {
+      margin: auto 4rem auto 0 !important;
+      width: 20rem !important; } }
 
 /**/
 /* Tablets & Landscape */
@@ -58,7 +82,28 @@ html {
     font-size: 3.2rem !important; }
   .home_btn {
     width: 13rem !important;
-    padding: 1rem 0.5rem !important; } }
+    padding: 1rem 0.5rem !important; }
+  .about_container {
+    width: 90% !important;
+    margin: 3rem auto !important;
+    flex-direction: column !important; }
+  .about_left {
+    background: none !important;
+    clip-path: none !important;
+    padding: 2rem !important; }
+    .about_left-heading::after {
+      width: 65% !important; }
+    .about_left-paragraph {
+      width: 100% !important; }
+      .about_left-paragraph.quote {
+        margin-bottom: 3rem !important; }
+    .about_left-skills {
+      margin-top: 2rem !important; }
+      .about_left-skills > * {
+        font-size: 1.2rem !important;
+        padding: 0.2rem !important; }
+  .about_right {
+    margin: 3rem auto !important; } }
 
 /**/
 /* Phones */
@@ -80,7 +125,16 @@ html {
     font-size: 2.8rem !important; }
   .home_btn {
     width: 13rem !important;
-    padding: 1rem 0.5rem !important; } }
+    padding: 1rem 0.5rem !important; }
+  .about_container {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important; }
+  .about_left-paragraph {
+    font-size: 1.3rem !important; }
+  .about_left-skills {
+    display: block !important;
+    grid-template-columns: none !important; } }
 
 .hamburger {
   position: absolute;
