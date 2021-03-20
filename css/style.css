@@ -175,6 +175,26 @@ html {
   .hamburger.open .hamburger_btn::after {
     transform: rotate(-45deg) translate(1.5rem, 1.5rem); }
 
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/top.jpg);
+  background-size: cover;
+  padding: 7rem; }
+  .work_title {
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+  .work_description {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 3rem; }
+  .work_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+
 .about {
   display: flex;
   height: 100vh;
