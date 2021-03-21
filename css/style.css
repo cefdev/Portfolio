@@ -187,25 +187,46 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #ffffff; }
+  color: #ffffff;
+  transition: all 0.3s ease-in-out; }
+  .project:hover .project_title {
+    display: none; }
+  .project:hover .project_description,
+  .project:hover .project_skills,
+  .project:hover .project_links {
+    display: block; }
   .project-a {
     background: linear-gradient(0deg, rgba(2, 64, 194, 0.7) 0%, rgba(2, 64, 194, 0.7) 100%), url(../img/project-a-background.png);
     background-size: cover; }
+    .project-a:hover {
+      background: #0240c2; }
   .project-b {
     background: linear-gradient(0deg, rgba(255, 247, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%), url(../img/project-b-background.png);
     background-size: cover; }
+    .project-b:hover {
+      background: #fff700;
+      color: #000000; }
   .project-c {
     background: linear-gradient(0deg, rgba(255, 0, 0, 0.7) 0%, rgba(239, 185, 185, 0.5) 100%), url(../img/project-c-background.png);
     background-size: cover; }
+    .project-c:hover {
+      background: red; }
   .project-d {
     background: linear-gradient(0deg, rgba(0, 102, 255, 0.8) 0%, rgba(0, 78, 255, 0.3) 100%), url(../img/project-e-background.png);
     background-size: cover; }
+    .project-d:hover {
+      background: #0066ff; }
   .project-e {
     background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(0, 0, 0, 0) 100%), url(../img/project-e-background.png);
     background-size: cover; }
+    .project-e:hover {
+      background: #333333; }
   .project-f {
     background: linear-gradient(0deg, rgba(0, 255, 31, 0.77) 0%, rgba(0, 255, 31, 0.25) 100%), url(../img/project-f-background.png);
     background-size: cover; }
+    .project-f:hover {
+      background: #00ff1f;
+      color: #000000; }
   .project_title {
     font-size: 2rem;
     font-weight: 600;
@@ -220,7 +241,8 @@ html {
     margin-bottom: 1rem;
     display: none; }
   .project_links {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    display: none; }
     .project_links > a {
       color: #ffffff;
       font-size: 2rem;
