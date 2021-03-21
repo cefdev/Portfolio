@@ -212,7 +212,7 @@ html {
     .project-c:hover {
       background: red; }
   .project-d {
-    background: linear-gradient(0deg, rgba(0, 102, 255, 0.8) 0%, rgba(0, 78, 255, 0.3) 100%), url(../img/project-e-background.png);
+    background: linear-gradient(0deg, rgba(0, 102, 255, 0.8) 0%, rgba(0, 78, 255, 0.3) 100%), url(../img/project-d-background.png);
     background-size: cover; }
     .project-d:hover {
       background: #0066ff; }
