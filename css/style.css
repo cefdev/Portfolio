@@ -178,7 +178,7 @@ html {
 .project {
   box-sizing: border-box;
   width: calc( (100% - 6rem) / 3);
-  height: 20rem;
+  height: 28rem;
   margin: 1rem;
   padding: 1rem;
   border-radius: 1.2rem;
