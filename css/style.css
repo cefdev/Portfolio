@@ -484,3 +484,51 @@ html {
     .tapbar-resume:hover {
       color: #ffffff !important;
       background-color: #242526; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8rem;
+  background: #242526;
+  color: #ffffff; }
+  .footer_header {
+    font-size: 3rem;
+    margin-bottom: 4rem; }
+  .footer_paragraph {
+    width: 60%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 4rem; }
+  .footer_btn {
+    width: 15rem;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    background: #0095ff;
+    cursor: pointer;
+    border-radius: 5rem;
+    transition: all 0.3s ease-in-out; }
+    .footer_btn:hover {
+      background: #ffffff; }
+      .footer_btn:hover a {
+        color: #0095ff; }
+    .footer_btn a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 600; }
+  .footer_links {
+    margin-bottom: 4rem; }
+    .footer_links > * {
+      display: inline-block;
+      font-size: 2rem;
+      color: #0095ff;
+      margin: 0 2rem;
+      transition: all 0.2s ease-in-out; }
+      .footer_links > *:hover {
+        transform: scale(1.2); }
+  .footer_license {
+    font-size: 1.3rem; }
