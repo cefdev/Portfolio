@@ -93,15 +93,22 @@
 @media only screen and (max-width: 768px) {
   .hamburger {
     display: flex !important;
+    position: fixed !important;
   }
 
-  .header_resume,
-  nav {
-    display: none !important;
-  }
+  .header {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 1010 !important;
 
-  .header_logo {
-    margin: 0 auto !important;
+    &_resume,
+    nav {
+      display: none !important;
+    }
+
+    &_logo {
+      margin: 0 auto !important;
+    }
   }
 
   .tapbar {
