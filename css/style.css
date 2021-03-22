@@ -115,7 +115,12 @@ html {
   .work .project {
     width: calc((100% - 6rem)) !important; }
     .work .project_title {
-      font-size: 1.6rem !important; } }
+      font-size: 1.6rem !important; }
+  .footer_header {
+    font-size: 2rem !important; }
+  .footer_paragraph {
+    width: 100% !important;
+    font-size: 1.4rem !important; } }
 
 /**/
 /* Phones */
@@ -150,7 +155,9 @@ html {
   .work {
     padding: 3rem 1rem !important; }
     .work_container {
-      width: 100% !important; } }
+      width: 100% !important; }
+  .footer {
+    padding: 8rem 3rem !important; } }
 
 .hamburger {
   position: absolute;

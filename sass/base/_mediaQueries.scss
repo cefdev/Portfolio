@@ -191,6 +191,17 @@
       }
     }
   }
+
+  // FOOTER
+  .footer {
+    &_header {
+      font-size: 2rem !important;
+    }
+    &_paragraph {
+      width: 100% !important;
+      font-size: 1.4rem !important;
+    }
+  }
 }
 
 /**/
@@ -254,5 +265,10 @@
     &_container {
       width: 100% !important;
     }
+  }
+
+  // FOOTER
+  .footer {
+    padding: 8rem 3rem !important;
   }
 }
