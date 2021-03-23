@@ -1,14 +1,15 @@
-@import "./base/base";
-@import "./base/mediaQueries";
-
 @import "./abstracts/variables";
+
+@import "./base/base";
+@import "./base/animation";
+@import "./base/mediaQueries";
 
 @import "./components/hamburger";
 @import "./components/project";
 
-@import "./layouts/work";
-@import "./layouts/about";
 @import "./layouts/header";
 @import "./layouts/home";
-@import "./layouts/tapbar";
+@import "./layouts/about";
+@import "./layouts/work";
 @import "./layouts/footer";
+@import "./layouts/tapbar";

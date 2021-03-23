@@ -10,6 +10,21 @@ html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth; }
 
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: #0095ff; } }
+
 /**/
 /* Small screens & laptops */
 /**/
@@ -278,85 +293,6 @@ html {
       margin: 1rem;
       text-shadow: 0px 0px 10px black, 0px 0px 4px black; }
 
-.work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: url(../img/top.jpg);
-  background-size: cover;
-  padding: 7rem; }
-  .work_title {
-    font-size: 3rem;
-    margin-bottom: 2rem; }
-  .work_description {
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 3rem; }
-  .work_container {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; }
-
-.about {
-  display: flex;
-  height: 100vh;
-  background-color: #242526; }
-  .about_container {
-    width: 110rem;
-    background: url(../img/top.jpg);
-    background-size: cover;
-    margin: auto;
-    display: flex;
-    border-radius: 0.4rem;
-    overflow: hidden; }
-  .about_left {
-    background: #ffffff;
-    width: 60%;
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-    padding: 5rem; }
-    .about_left-heading {
-      font-size: 3rem;
-      margin-bottom: 3rem; }
-      .about_left-heading::after {
-        content: "";
-        display: block;
-        height: 2px;
-        position: relative;
-        top: -22px;
-        left: 160px;
-        background-color: #242526; }
-    .about_left-paragraph {
-      font-size: 1.4rem;
-      font-weight: 500;
-      width: 90%;
-      margin-bottom: 1rem; }
-      .about_left-paragraph span {
-        color: #0095ff; }
-      .about_left-paragraph.quote {
-        color: #242526;
-        font-style: italic; }
-    .about_left-skills {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(24rem, 20rem));
-      margin-top: 3rem; }
-      .about_left-skills > * {
-        list-style: inside;
-        font-size: 1.3rem;
-        font-weight: 500;
-        padding: 0.3rem; }
-  .about_right {
-    width: 30rem;
-    border-radius: 50%;
-    margin: auto;
-    box-shadow: 0px 0.5rem 1rem rgba(36, 37, 38, 0.5);
-    filter: grayscale(1);
-    transition: all 0.2s ease-in-out; }
-    .about_right:hover {
-      filter: none; }
-
 .header {
   position: fixed;
   z-index: 2;
@@ -447,7 +383,14 @@ html {
   .home_description {
     font-size: 5rem;
     font-weight: 700;
-    color: #242526; }
+    color: #242526;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 0.5rem solid #0095ff;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; }
     .home_description span {
       color: #0095ff; }
   .home_btn {
@@ -467,35 +410,84 @@ html {
       font-size: 1.4rem;
       font-weight: 600; }
 
-.tapbar {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: none;
-  justify-content: space-evenly;
+.about {
+  display: flex;
+  height: 100vh;
+  background-color: #242526; }
+  .about_container {
+    width: 110rem;
+    background: url(../img/top.jpg);
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    border-radius: 0.4rem;
+    overflow: hidden; }
+  .about_left {
+    background: #ffffff;
+    width: 60%;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    padding: 5rem; }
+    .about_left-heading {
+      font-size: 3rem;
+      margin-bottom: 3rem; }
+      .about_left-heading::after {
+        content: "";
+        display: block;
+        height: 2px;
+        position: relative;
+        top: -22px;
+        left: 160px;
+        background-color: #242526; }
+    .about_left-paragraph {
+      font-size: 1.4rem;
+      font-weight: 500;
+      width: 90%;
+      margin-bottom: 1rem; }
+      .about_left-paragraph span {
+        color: #0095ff; }
+      .about_left-paragraph.quote {
+        color: #242526;
+        font-style: italic; }
+    .about_left-skills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(24rem, 20rem));
+      margin-top: 3rem; }
+      .about_left-skills > * {
+        list-style: inside;
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 0.3rem; }
+  .about_right {
+    width: 30rem;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0px 0.5rem 1rem rgba(36, 37, 38, 0.5);
+    filter: grayscale(1);
+    transition: all 0.2s ease-in-out; }
+    .about_right:hover {
+      filter: none; }
+
+.work {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 1.5rem 2rem;
-  background-color: #0095ff;
-  z-index: 100; }
-  .tapbar a {
-    color: #ffffff;
-    font-size: 1.4rem;
+  justify-content: center;
+  background: url(../img/top.jpg);
+  background-size: cover;
+  padding: 7rem; }
+  .work_title {
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+  .work_description {
+    font-size: 1.6rem;
     font-weight: 500;
-    text-decoration: none;
-    padding: 0.6rem 1.5rem;
-    transition: all 0.5s ease; }
-  .tapbar-resume {
-    color: #000000 !important;
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 0.6rem 2.5rem;
-    background-color: #ffffff;
-    border-radius: 5rem;
-    transition: all 0.5s ease; }
-    .tapbar-resume:hover {
-      color: #ffffff !important;
-      background-color: #242526; }
+    margin-bottom: 3rem; }
+  .work_container {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
 
 .footer {
   display: flex;
@@ -544,3 +536,33 @@ html {
         transform: scale(1.2); }
   .footer_license {
     font-size: 1.3rem; }
+
+.tapbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #0095ff;
+  z-index: 100; }
+  .tapbar a {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    transition: all 0.5s ease; }
+  .tapbar-resume {
+    color: #000000 !important;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.6rem 2.5rem;
+    background-color: #ffffff;
+    border-radius: 5rem;
+    transition: all 0.5s ease; }
+    .tapbar-resume:hover {
+      color: #ffffff !important;
+      background-color: #242526; }
