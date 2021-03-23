@@ -9,13 +9,10 @@
   background-color: $color-secondary;
 
   &_logo {
-    text-decoration: none;
     margin-right: auto;
 
-    & h1 {
-      font-weight: 800;
-      color: $color-white;
-      text-transform: uppercase;
+    & img {
+      height: 4rem;
     }
   }
 
