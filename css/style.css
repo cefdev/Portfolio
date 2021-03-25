@@ -414,11 +414,9 @@ html {
     color: #242526;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: 0.5rem solid #0095ff;
-    /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
-    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; }
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite; }
     .home_description span {
       color: #0095ff; }
   .home_btn {
