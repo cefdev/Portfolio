@@ -28,3 +28,25 @@ mobileLinks.forEach((link) => {
     menuOpen = false;
   });
 });
+
+// On Scroll, Make the Header's background visible
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(window).width() >= 415) {
+      var scroll = $(window).scrollTop();
+      if (scroll > 300) {
+        $(".header").css({
+          background: "#242526",
+          "box-shadow": "0 0 5px #00000033",
+          transition: "all .5s ease-in-out",
+        });
+      } else {
+        $(".header").css({
+          background: "transparent",
+          "box-shadow": "0 0 0",
+          transition: "all .5s ease-in-out",
+        });
+      }
+    }
+  });
+});
