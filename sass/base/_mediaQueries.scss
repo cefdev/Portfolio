@@ -50,7 +50,6 @@
         &::after {
           top: -1.5rem !important;
           left: 11rem !important;
-          width: 85% !important;
         }
       }
 
@@ -150,10 +149,14 @@
 
   // ABOUT SECTION
   .about {
+    background: linear-gradient(to right, #242526, #ffffff00),
+      url(../img/about-wallpaper-b.jpg) !important;
+
     &_container {
       width: 90% !important;
       margin: 3rem auto !important;
       flex-direction: column !important;
+      background: $color-white !important;
     }
 
     &_left {
@@ -162,7 +165,7 @@
       padding: 2rem !important;
 
       &-heading::after {
-        width: 65% !important;
+        width: 75% !important;
       }
 
       &-paragraph {
@@ -255,6 +258,10 @@
     }
 
     &_left {
+      &-heading::after {
+        width: 65% !important;
+      }
+
       &-paragraph {
         font-size: 1.3rem !important;
       }
