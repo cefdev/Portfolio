@@ -6,7 +6,6 @@
   justify-content: flex-end;
   align-items: center;
   padding: 1.5rem 10%;
-  background-color: $color-secondary;
 
   &_logo {
     margin-right: auto;
@@ -22,6 +21,11 @@
 
     & li {
       padding: 0 2.5rem;
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
     }
 
     & a {

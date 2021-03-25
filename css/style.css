@@ -23,7 +23,7 @@ html {
   to {
     border-color: transparent; }
   50% {
-    border-color: #0095ff; } }
+    border-color: #0066ff; } }
 
 /**/
 /* Small screens & laptops */
@@ -328,8 +328,7 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1.5rem 10%;
-  background-color: #242526; }
+  padding: 1.5rem 10%; }
   .header_logo {
     margin-right: auto; }
     .header_logo img {
@@ -338,7 +337,10 @@ html {
     list-style: none;
     display: flex; }
     .header_links li {
-      padding: 0 2.5rem; }
+      padding: 0 2.5rem;
+      transition: all 0.3s ease 0s; }
+      .header_links li:hover {
+        transform: translateY(-3px); }
     .header_links a {
       font-size: 1.4rem;
       font-weight: 500;
@@ -346,7 +348,7 @@ html {
       text-decoration: none;
       transition: all 0.3s ease 0s; }
       .header_links a:hover {
-        color: #0095ff; }
+        color: #0066ff; }
   .header_resume {
     font-size: 1.4rem;
     font-weight: 500;
@@ -354,7 +356,7 @@ html {
     text-decoration: none;
     margin-left: 4rem;
     padding: 1rem 2.5rem;
-    background-color: #0095ff;
+    background-color: #0066ff;
     border-radius: 5rem;
     transition: all 0.5s ease; }
     .header_resume:hover {
@@ -386,14 +388,15 @@ html {
       display: block;
       transition: all 0.3s ease; }
       .mobile_links a:hover, .mobile_links a:focus {
-        color: #0095ff; }
+        color: #0066ff; }
 
 .home {
   position: relative;
   width: 100%;
   height: 90vh;
-  background: url(../img/top.jpg);
-  background-size: cover; }
+  background: linear-gradient(to right bottom, #242526, #ffffff00), url(../img/aa.jpg);
+  background-size: cover;
+  color: white; }
   .home_container {
     position: absolute;
     top: 50%;
@@ -411,25 +414,28 @@ html {
   .home_description {
     font-size: 5rem;
     font-weight: 700;
-    color: #242526;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     white-space: nowrap;
     /* Keeps the content on a single line */
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite; }
     .home_description span {
-      color: #0095ff; }
+      color: #0066ff; }
   .home_btn {
     width: 15rem;
     padding: 1.5rem 1.5rem;
     margin-top: 5rem;
     text-align: center;
-    background: #0095ff;
+    background: #0066ff;
     cursor: pointer;
     border-radius: 5rem;
     transition: all 0.3s ease-in-out; }
     .home_btn:hover {
-      background: #242526; }
+      background-color: #ffffff;
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      .home_btn:hover > a {
+        color: #000000; }
     .home_btn a {
       color: #ffffff;
       text-decoration: none;
@@ -470,7 +476,7 @@ html {
       width: 90%;
       margin-bottom: 1rem; }
       .about_left-paragraph span {
-        color: #0095ff; }
+        color: #0066ff; }
       .about_left-paragraph.quote {
         color: #242526;
         font-style: italic; }
@@ -537,14 +543,14 @@ html {
     padding: 1.5rem 1.5rem;
     margin-bottom: 4rem;
     text-align: center;
-    background: #0095ff;
+    background: #0066ff;
     cursor: pointer;
     border-radius: 5rem;
     transition: all 0.3s ease-in-out; }
     .footer_btn:hover {
       background: #ffffff; }
       .footer_btn:hover a {
-        color: #0095ff; }
+        color: #0066ff; }
     .footer_btn a {
       color: #ffffff;
       text-decoration: none;
@@ -555,7 +561,7 @@ html {
     .footer_links > * {
       display: inline-block;
       font-size: 2rem;
-      color: #0095ff;
+      color: #0066ff;
       margin: 0 2rem;
       transition: all 0.2s ease-in-out; }
       .footer_links > *:hover {
@@ -571,7 +577,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem 2rem;
-  background-color: #0095ff;
+  background-color: #0066ff;
   z-index: 100; }
   .tapbar a {
     color: #ffffff;
