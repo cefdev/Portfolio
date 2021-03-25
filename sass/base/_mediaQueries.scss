@@ -279,3 +279,55 @@
     padding: 8rem 3rem !important;
   }
 }
+
+/**/
+/* Small Phones */
+/**/
+@media only screen and (max-width: 360px) {
+  // HEADER
+  .header {
+    padding: 0.5rem !important;
+  }
+
+  //HOME
+  .home {
+    &_name {
+      font-size: 2.4rem !important;
+    }
+
+    &_description {
+      font-size: 2rem !important;
+    }
+  }
+
+  // HUMBERGER
+  .hamburger {
+    margin: 0.7rem 1.5rem !important;
+
+    &_btn {
+      width: 3.5rem !important;
+      height: 0.4rem !important;
+
+      &::before {
+        width: 3.5rem !important;
+        height: 0.4rem !important;
+        transform: translateY(-1.3rem) !important;
+      }
+
+      &::after {
+        width: 3.5rem !important;
+        height: 0.4rem !important;
+        transform: translateY(1.3rem) !important;
+      }
+    }
+  }
+
+  // TAPBAR
+  .tapbar {
+    padding: 1rem !important;
+
+    & > * {
+      font-size: 1.2rem !important;
+    }
+  }
+}

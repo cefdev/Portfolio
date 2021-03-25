@@ -180,6 +180,34 @@ html {
   .footer {
     padding: 8rem 3rem !important; } }
 
+/**/
+/* Small Phones */
+/**/
+@media only screen and (max-width: 360px) {
+  .header {
+    padding: 0.5rem !important; }
+  .home_name {
+    font-size: 2.4rem !important; }
+  .home_description {
+    font-size: 2rem !important; }
+  .hamburger {
+    margin: 0.7rem 1.5rem !important; }
+    .hamburger_btn {
+      width: 3.5rem !important;
+      height: 0.4rem !important; }
+      .hamburger_btn::before {
+        width: 3.5rem !important;
+        height: 0.4rem !important;
+        transform: translateY(-1.3rem) !important; }
+      .hamburger_btn::after {
+        width: 3.5rem !important;
+        height: 0.4rem !important;
+        transform: translateY(1.3rem) !important; }
+  .tapbar {
+    padding: 1rem !important; }
+    .tapbar > * {
+      font-size: 1.2rem !important; } }
+
 .hamburger {
   position: absolute;
   top: 0;
