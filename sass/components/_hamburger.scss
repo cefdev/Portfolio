@@ -46,10 +46,10 @@
   }
 
   &.open &_btn::before {
-    transform: rotate(45deg) translate(1.5rem, -1.5rem);
+    transform: rotate(45deg) translate(1.5rem, -1.5rem) !important;
   }
 
   &.open &_btn::after {
-    transform: rotate(-45deg) translate(1.5rem, 1.5rem);
+    transform: rotate(-45deg) translate(1.5rem, 1.5rem) !important;
   }
 }

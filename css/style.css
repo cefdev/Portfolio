@@ -243,9 +243,9 @@ html {
     transform: translateX(-2rem);
     background: transparent; }
   .hamburger.open .hamburger_btn::before {
-    transform: rotate(45deg) translate(1.5rem, -1.5rem); }
+    transform: rotate(45deg) translate(1.5rem, -1.5rem) !important; }
   .hamburger.open .hamburger_btn::after {
-    transform: rotate(-45deg) translate(1.5rem, 1.5rem); }
+    transform: rotate(-45deg) translate(1.5rem, 1.5rem) !important; }
 
 .project {
   box-sizing: border-box;
